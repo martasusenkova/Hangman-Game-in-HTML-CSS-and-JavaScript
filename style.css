@@ -96,6 +96,8 @@ body {
 .keyboard button {
   padding: 7px;
   width: calc(100% / 9 - 5px);
+  pointer-events: auto;
+  z-index: 20;
 }
 :where(.game-modal, .keyboard) button:hover {
   background-color: #989bdf;
@@ -106,8 +108,6 @@ body {
 
 .game-modal {
   opacity: 0;
-  pointer-events: none;
-
   position: fixed;
   left: 0;
   top: 0;
